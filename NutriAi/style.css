@@ -1,0 +1,1289 @@
+/* ================================
+   GENERAL SETTINGS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7faf8;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   NAVIGATION
+================================ */
+
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2933;
+}
+
+.logo span {
+    color: #35a66f;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #35a66f;
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(247, 250, 248, 0.92),
+            rgba(247, 250, 248, 0.92)
+        );
+
+    padding: 80px 25px;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.tagline,
+.small-heading {
+    color: #35a66f;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    color: #1f2933;
+}
+
+.hero h1 span {
+    display: block;
+    color: #35a66f;
+}
+
+.hero-description {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #667085;
+    font-size: 18px;
+}
+
+.primary-button,
+.generate-button {
+    display: inline-block;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 14px 28px;
+
+    background: #35a66f;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.primary-button:hover,
+.generate-button:hover {
+    transform: translateY(-2px);
+    background: #278456;
+}
+
+
+/* ================================
+   SECTION HEADINGS
+================================ */
+
+.section-heading {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: #1f2933;
+}
+
+.section-heading p:not(.small-heading) {
+    color: #667085;
+}
+
+
+/* ================================
+   PLANNER SECTION
+================================ */
+
+.planner-section {
+    padding: 90px 25px;
+    background: white;
+}
+
+.planner-card {
+    max-width: 800px;
+    margin: auto;
+
+    background: #ffffff;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+
+    font-weight: 600;
+    color: #344054;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d0d5dd;
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #35a66f;
+
+    box-shadow:
+        0 0 0 3px rgba(53, 166, 111, 0.12);
+}
+
+.generate-button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/* ================================
+   RESULTS SECTION
+================================ */
+
+.results-section {
+    padding: 90px 25px;
+    background: #f7faf8;
+}
+
+.nutrition-cards {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.nutrition-card {
+    background: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.nutrition-card h3 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.nutrition-card p {
+    color: #667085;
+    margin-bottom: 8px;
+}
+
+.nutrition-card strong {
+    font-size: 25px;
+    color: #35a66f;
+}
+
+
+/* ================================
+   MEAL PLAN
+================================ */
+
+.meal-plan {
+    max-width: 900px;
+    margin: 60px auto 0;
+}
+
+.meal-plan > h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.meal-card {
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 15px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s;
+}
+
+.meal-card:hover {
+    transform: translateY(-2px);
+}
+
+.meal-card span {
+    color: #35a66f;
+    font-weight: 600;
+}
+
+.meal-card h3 {
+    margin-top: 8px;
+    color: #344054;
+}
+
+
+/* ================================
+   ABOUT SECTION
+================================ */
+
+.about-section {
+    padding: 90px 25px;
+    background: white;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background: #1f2933;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+footer p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 800px) {
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .nutrition-cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .planner-card {
+        padding: 25px 20px;
+    }
+
+    .nutrition-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+}
+/* ========================================
+   PROFESSIONAL MEAL DETAILS
+======================================== */
+
+.meal-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #344054;
+    margin-top: 8px;
+    margin-bottom: 14px;
+}
+
+.meal-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.meal-details span {
+    background: #f0f8f4;
+    color: #278456;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.meal-ingredients {
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.meal-ingredients strong {
+    color: #344054;
+}
+
+
+/* ========================================
+   MEAL CARD IMPROVEMENT
+======================================== */
+
+.meal-card {
+    border: 1px solid #edf2ef;
+}
+
+.meal-card:hover {
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ========================================
+   GENERATE ANOTHER PLAN BUTTON
+======================================== */
+
+.meal-plan > .generate-button {
+    display: block;
+    border: none;
+}
+
+.meal-plan > .generate-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   MOBILE MEAL DETAILS
+======================================== */
+
+@media (max-width: 550px) {
+
+    .meal-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+    }
+
+    .meal-title {
+        font-size: 17px;
+    }
+
+}
+
+/* ========================================
+   BMI DASHBOARD
+======================================== */
+
+.bmi-card {
+    max-width: 700px;
+    margin: 0 auto 30px;
+
+    background: white;
+
+    padding: 25px 35px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.06);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    text-align: center;
+
+    border: 1px solid #edf2ef;
+}
+
+.bmi-label {
+    color: #667085;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 5px;
+}
+
+.bmi-card strong {
+    font-size: 25px;
+
+    color: #35a66f;
+}
+
+
+/* Mobile */
+@media (max-width: 550px) {
+
+    .bmi-card {
+        flex-direction: column;
+        gap: 20px;
+
+        padding: 25px;
+    }
+
+}
+
+/* ========================================
+   WHY THIS PLAN
+======================================== */
+
+.why-plan-card {
+    max-width: 1000px;
+    margin: 45px auto 0;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+
+    border: 1px solid #edf2ef;
+}
+
+.why-plan-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.why-plan-heading h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #1f2933;
+}
+
+.why-plan-heading p:not(.small-heading) {
+    color: #667085;
+}
+
+
+/* ========================================
+   PLAN FACTORS
+======================================== */
+
+.plan-factors {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.plan-factor {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 18px;
+
+    background: #f7faf8;
+
+    border-radius: 12px;
+}
+
+.plan-factor > span {
+    font-size: 25px;
+}
+
+.plan-factor strong {
+    display: block;
+
+    color: #344054;
+
+    font-size: 14px;
+
+    margin-bottom: 3px;
+}
+
+.plan-factor p {
+    color: #35a66f;
+
+    font-weight: 600;
+
+    font-size: 14px;
+}
+
+
+/* ========================================
+   PLAN EXPLANATION
+======================================== */
+
+.plan-explanation {
+    padding: 18px;
+
+    background: #f0f8f4;
+
+    border-radius: 12px;
+
+    color: #475467;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+
+    .plan-factors {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .why-plan-card {
+        padding: 25px 20px;
+    }
+
+    .plan-factors {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ========================================
+   STEP 6 - PROFESSIONAL PLANNER FORM
+======================================== */
+
+@media (min-width: 801px) {
+
+    #dietForm {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        column-gap: 25px;
+
+    }
+
+    #dietForm .form-group:last-of-type {
+        grid-column: 1 / -1;
+    }
+
+    #dietForm .generate-button {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* ========================================
+   FORM INPUT IMPROVEMENTS
+======================================== */
+
+.form-group input,
+.form-group select {
+
+    background: #ffffff;
+
+    color: #344054;
+
+    min-height: 48px;
+
+}
+
+.form-group input::placeholder {
+
+    color: #98a2b3;
+
+}
+
+.form-group input:hover,
+.form-group select:hover {
+
+    border-color: #98a2b3;
+
+}
+
+
+/* ========================================
+   FORM CARD POLISH
+======================================== */
+
+.planner-card {
+
+    border: 1px solid #edf2ef;
+
+}
+
+
+/* ========================================
+   GENERATE BUTTON POLISH
+======================================== */
+
+.generate-button {
+
+    min-height: 50px;
+
+    letter-spacing: 0.2px;
+
+}
+
+.generate-button:active {
+
+    transform: translateY(0);
+
+}
+
+/* ========================================
+   STEP 6B - PROFESSIONAL HERO SECTION
+======================================== */
+
+.hero {
+    min-height: 680px;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(53, 166, 111, 0.12), transparent 30%),
+        radial-gradient(circle at 85% 75%, rgba(53, 166, 111, 0.10), transparent 30%),
+        #f7faf8;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.tagline {
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 62px;
+    letter-spacing: -1px;
+}
+
+.hero-description {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.primary-button {
+    padding: 15px 32px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(53, 166, 111, 0.18);
+}
+
+.primary-button:hover {
+    box-shadow: 0 12px 25px rgba(53, 166, 111, 0.25);
+}
+
+
+/* Decorative circles */
+
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero::before {
+    width: 220px;
+    height: 220px;
+    top: 80px;
+    left: -100px;
+    border: 2px solid rgba(53, 166, 111, 0.12);
+}
+
+.hero::after {
+    width: 280px;
+    height: 280px;
+    bottom: -140px;
+    right: -100px;
+    border: 2px solid rgba(53, 166, 111, 0.12);
+}
+
+
+/* Small feature indicators */
+
+.hero-content::after {
+    content: "Personalized  •  Simple  •  Goal-Based";
+    display: block;
+    margin-top: 35px;
+    color: #667085;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .hero {
+        min-height: 550px;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        letter-spacing: 0;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-content::after {
+        font-size: 11px;
+    }
+
+}
+
+/* ========================================
+   STEP 6C - PROFESSIONAL RESULTS DASHBOARD
+======================================== */
+
+.results-section {
+    position: relative;
+}
+
+.nutrition-cards {
+    margin-top: 10px;
+}
+
+.nutrition-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #edf2ef;
+    transition: 0.3s ease;
+}
+
+.nutrition-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #35a66f;
+}
+
+.nutrition-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.09);
+}
+
+.nutrition-card h3 {
+    margin-top: 5px;
+    font-size: 32px;
+}
+
+.nutrition-card p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nutrition-card strong {
+    display: block;
+    margin-top: 5px;
+    font-size: 27px;
+}
+
+
+/* BMI dashboard improvement */
+
+.bmi-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.bmi-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #35a66f;
+}
+
+
+/* Results spacing */
+
+.results-section .section-heading {
+    margin-bottom: 35px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 550px) {
+
+    .nutrition-card {
+        padding: 22px;
+    }
+
+    .nutrition-card strong {
+        font-size: 24px;
+    }
+
+}
+
+/* ========================================
+   STEP 6D - PROFESSIONAL MEAL PLAN
+======================================== */
+
+.meal-plan {
+    max-width: 950px;
+    margin: 65px auto 0;
+}
+
+.meal-plan > h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #1f2933;
+}
+
+.meal-card {
+    position: relative;
+    padding: 28px 30px;
+    border: 1px solid #e7eee9;
+    border-left: 5px solid #35a66f;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.meal-card:hover {
+    transform: translateX(4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.meal-card span {
+    display: inline-block;
+    background: #f0f8f4;
+    padding: 5px 11px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.meal-title {
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    color: #1f2933;
+}
+
+.meal-details {
+    gap: 8px;
+}
+
+.meal-details span {
+    background: #f7faf8;
+    border: 1px solid #e4eee8;
+    color: #278456;
+    padding: 6px 12px;
+}
+
+.meal-ingredients {
+    padding-top: 12px;
+    border-top: 1px solid #edf2ef;
+    margin-top: 12px;
+}
+
+.meal-ingredients strong {
+    color: #344054;
+}
+
+
+/* Generate another plan button */
+
+.meal-plan > .generate-button {
+    margin-top: 30px !important;
+    transition: all 0.3s ease;
+}
+
+.meal-plan > .generate-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(53, 166, 111, 0.20);
+}
+
+
+/* Mobile */
+
+@media (max-width: 550px) {
+
+    .meal-plan {
+        margin-top: 50px;
+    }
+
+    .meal-plan > h2 {
+        font-size: 27px;
+    }
+
+    .meal-card {
+        padding: 23px 20px;
+    }
+
+    .meal-title {
+        font-size: 18px;
+    }
+
+}
+
+/* ========================================
+   STEP 6E - PROFESSIONAL ABOUT SECTION
+======================================== */
+
+.about-section {
+    padding: 100px 25px;
+    background: #ffffff;
+}
+
+.about-content {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.about-card {
+    padding: 30px;
+    background: #f7faf8;
+    border: 1px solid #e7eee9;
+    border-radius: 16px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+}
+
+.about-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.about-card h3 {
+    font-size: 19px;
+    color: #344054;
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* Technology */
+
+.technology-card {
+    max-width: 850px;
+    margin: 45px auto 0;
+    padding: 30px;
+    text-align: center;
+    background: #f0f8f4;
+    border-radius: 16px;
+}
+
+.technology-card .small-heading {
+    margin-bottom: 8px;
+}
+
+.technology-card h3 {
+    font-size: 25px;
+    color: #1f2933;
+    margin-bottom: 20px;
+}
+
+.technology-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.technology-list span {
+    background: white;
+    color: #278456;
+    border: 1px solid #dcebe2;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+    .about-content {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .about-section {
+        padding: 75px 20px;
+    }
+
+    .about-card {
+        padding: 25px 20px;
+    }
+
+    .technology-card {
+        padding: 25px 18px;
+    }
+
+}
+
+/* ========================================
+   STEP 6F - NAVIGATION & FOOTER POLISH
+======================================== */
+
+/* Navigation */
+
+.navbar {
+    min-height: 70px;
+}
+
+.logo {
+    letter-spacing: -0.5px;
+}
+
+.nav-links a {
+    position: relative;
+    padding: 5px 0;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #35a66f;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 32px 25px;
+}
+
+footer p {
+    line-height: 1.7;
+}
+
+
+/* Better button interaction */
+
+.primary-button:active,
+.generate-button:active {
+    transform: scale(0.98);
+}
+
+
+/* Mobile navigation */
+
+@media (max-width: 550px) {
+
+    .navbar {
+        min-height: auto;
+        padding: 16px 20px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+/* ========================================
+   STEP 7F - REGENERATE MESSAGE
+======================================== */
+
+.regenerate-message {
+    text-align: center;
+    color: #35a66f;
+    font-size: 14px;
+    font-weight: 600;
+    min-height: 22px;
+    margin-bottom: 10px;
+}
