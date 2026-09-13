@@ -501,11 +501,24 @@ return topMeals[Math.floor(Math.random() * topMeals.length)];
     }
 
 
-    let breakfast;
-    let lunch;
-    let snack;
-    let dinner;
+let breakfast;
+let lunch;
+let snack;
+let dinner;
 
+// Select one suitable meal for each meal type
+breakfast = selectMeal(meals.breakfast);
+lunch = selectMeal(meals.lunch);
+snack = selectMeal(meals.snack);
+dinner = selectMeal(meals.dinner);
+
+// Return the complete generated meal plan
+return {
+    breakfast,
+    lunch,
+    snack,
+    dinner
+};
 }
     /* ========================================
    BMI + GOAL BASED CALORIE ADJUSTMENT
