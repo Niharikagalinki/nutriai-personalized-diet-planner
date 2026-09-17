@@ -18,20 +18,22 @@ NutriAI is a web-based personalized diet planning application developed using HT
 - Generate Another Plan functionality
 - Input validation
 - Responsive and professional user interface
-
 ## Screenshots
 
 ### Home Page
 The landing page introduces NutriAI and provides access to the personalized diet planner.
 
+![NutriAI Home Page](screenshots/home.png)
+
 ### Diet Planner
 Users enter their age, height, weight, fitness goal, activity level, dietary preference, food preferences, and allergies.
+
+![NutriAI Diet Planner](screenshots/diet-planner.png)
 
 ### Personalized Nutrition Plan
 The application displays BMI, BMI category, estimated calories, protein, carbohydrates, fats, and a personalized meal plan.
 
-### Meal Recommendations
-The generated plan provides breakfast, lunch, snack, and dinner recommendations with calories, protein, and ingredients.
+![NutriAI Results](screenshots/results.png)
 
 ## How It Works
 
