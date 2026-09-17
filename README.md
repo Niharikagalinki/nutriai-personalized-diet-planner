@@ -34,7 +34,6 @@ Users enter their age, height, weight, fitness goal, activity level, dietary pre
 The application displays BMI, BMI category, estimated calories, protein, carbohydrates, fats, and a personalized meal plan.
 
 ![NutriAI Results](screenshots/results.png)
-
 ## How It Works
 
 1. The user enters their basic details such as name, age, height, and weight.
